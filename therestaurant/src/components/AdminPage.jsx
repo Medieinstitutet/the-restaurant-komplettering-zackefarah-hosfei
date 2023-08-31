@@ -23,7 +23,7 @@ function AdminPage() {
                 RESTAURANT_ADDRESS
             );
 
-            const restaurantId = 0;
+            const restaurantId = 1; // Replace with the desired restaurantId
             const bookingIds = await contract.methods
                 .getBookings(restaurantId)
                 .call();
